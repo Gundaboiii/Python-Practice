@@ -1,5 +1,8 @@
-a = int(input("Enter a Number: "))
-prod = 1
-for i in range(1,a+1):
-    prod = prod * i
-print("Factorial of",a,"is",prod)
+def fact(n):
+    if (n==0 or n ==1):
+        return 1
+    else:
+        return n*fact(n-1)
+    
+n = int(input("Enter a number: "))
+print("Factorial of",n,"is",fact(n))
