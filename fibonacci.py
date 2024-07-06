@@ -1,9 +1,16 @@
-first_number = 0
-second_number = 1
-sum = 0
-n = int(input("Enter a Number :"))
-for i in range(n):
-    print(sum)
-    sum = first_number + second_number
-    first_number = second_number
-    second_number = sum
+def fibonacci(n):
+    sequence = []
+    a, b = 0, 1
+    for _ in range(n):
+        sequence.append(a)
+        a, b = b, a + b
+    return sequence
+
+# Input number of terms from the user
+n = int(input("Enter the number of terms in the Fibonacci sequence: "))
+
+# Calling the fibonacci function
+fibonacci_sequence = fibonacci(n)
+
+# Printing the Fibonacci sequence
+print("Fibonacci sequence:", fibonacci_sequence)
