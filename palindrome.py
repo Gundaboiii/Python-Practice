@@ -1,6 +1,9 @@
-a = input("Enter a String:")
-b = a[::-1]
-if (a == b):
-    print("The String is Palindrome")
-else:
-    print("The String is not Palindrome")
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        a = str(x)
+        b = a[::-1]
+        if (a == b):
+            return True
+        else:
+            return False
+        
