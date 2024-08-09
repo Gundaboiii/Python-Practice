@@ -1,0 +1,12 @@
+"""
+Given an array of ints, return True if one of the first 4 elements in the array is a 9. The array length may be less than 4.
+"""
+def array_front9(nums):
+  rand_var = False
+  for i in range(0,len(nums)):
+    if nums[i] == 9:
+      if i<4:
+        rand_var = True
+    else:
+      continue
+  return rand_var
